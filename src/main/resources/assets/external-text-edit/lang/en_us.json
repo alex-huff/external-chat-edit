@@ -1,0 +1,6 @@
+{
+  "text.autoconfig.external-text-edit.title": "External Text Edit Config",
+  "category.external-text-edit": "External Text Edit",
+  "text.autoconfig.external-text-edit.option.editorCommand": "Command to start the external editor",
+  "text.autoconfig.external-text-edit.option.editorCommand.@Tooltip": "{file}: replaced with the path to the temporary file used for editing\n{line}: replaced with the number of the current line being edited\n{line0}: same as {line} but starting from 0\n{column}: replaced with the current cursor position\n{column0}: same as {column} but starting from 0"
+}

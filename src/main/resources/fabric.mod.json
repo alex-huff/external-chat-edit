@@ -1,33 +1,39 @@
 {
-	"schemaVersion": 1,
-	"id": "external-text-edit",
-	"version": "${version}",
-	"name": "External Text Edit",
-	"description": "Edit text fields with an external editor",
-	"authors": [
-		"phonis"
-	],
-	"contact": {
-		"sources": "https://github.com/alex-huff/external-text-edit"
-	},
-	"license": "0BSD",
-	"icon": "assets/external-text-edit/icon.png",
-	"environment": "client",
-	"entrypoints": {
-		"client": [
-			"com.alexfh.external_text_edit.ExternalTextEdit"
-		]
-	},
-	"mixins": [
-		{
-			"config": "external-text-edit.mixins.json",
-			"environment": "client"
-		}
-	],
-	"depends": {
-		"fabricloader": ">=0.15.9",
-		"minecraft": "~1.20.4",
-		"java": ">=17",
-		"fabric-api": "*"
-	}
+  "schemaVersion": 1,
+  "id": "external-text-edit",
+  "version": "${version}",
+  "name": "External Text Edit",
+  "description": "Edit text fields with an external editor",
+  "authors": [
+    "phonis"
+  ],
+  "contact": {
+    "sources": "https://github.com/alex-huff/external-text-edit"
+  },
+  "license": "0BSD",
+  "icon": "assets/external-text-edit/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.alexfh.external_text_edit.ExternalTextEdit"
+    ],
+    "modmenu": [
+      "com.alexfh.external_text_edit.config.ExternalTextEditModMenuImpl"
+    ]
+  },
+  "mixins": [
+    {
+      "config": "external-text-edit.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "custom": {
+    "modmenu:clientsideOnly": true
+  },
+  "depends": {
+    "fabricloader": ">=0.15.9",
+    "minecraft": "~1.20.4",
+    "java": ">=17",
+    "fabric-api": "*"
+  }
 }
